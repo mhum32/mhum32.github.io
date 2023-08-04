@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_icon": "icons/32.png",
+      "default_title": "BitLife"
+   },
+   "background": {
+      "service_worker": "service_worker.js"
+   },
+   "content_scripts": [  ],
+   "content_security_policy": {
+      "sandbox": "sandbox allow-scripts allow-pointer-lock; script-src 'self' 'unsafe-eval' blob: 'unsafe-inline'; object-src 'self' 'unsafe-eval' blob: 'unsafe-inline';child-src 'self' 'unsafe-eval' blob: 'unsafe-inline' ; worker-src 'self' 'unsafe-eval' blob: 'unsafe-inline'; script-src-elem 'self' 'unsafe-eval' blob: 'unsafe-inline'"
+   },
+   "description": "BitLife game - take control of a stranger's life",
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "icons": {
+      "128": "icons/128.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkZJPsC5AGs7+OFV92/PfFQji/VyrJRmLbFem9kxbYZnd30WRXPpqoelI1w3LPxCs/rLv+W3hLyx54o6SCiokFuHFXgIwStbqPF1TIaKo4SRRmaysDzmPRqgzI9RMS0lfOfYlaxK429oVgyMAREdXwoHORy/CYW/uZlfw3gVs4VOPFfpOQ/nZGwRzNVMWIX1xINETGbpVtbeN90jHqGSKD3Mvog6XqD456/RijBHd10Gt8XoWgg+s99DjfbCGYqjQYOH/hXSIj707raBE9wHb4TBnwQ8UyStdl/6ISIvb5HBJc+Nyykg7R3UqNTU882peB/B0lhUhe/x1IbxY2rDaRQIDAQAB",
+   "manifest_version": 3,
+   "name": "BitLife",
+   "permissions": [ "storage" ],
+   "sandbox": {
+      "pages": [ "index.html" ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.0"
+}
